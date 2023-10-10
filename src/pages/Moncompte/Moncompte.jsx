@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { Outlet } from 'react-router-dom'
 export const Moncompte = () => {
   return (
-    <div>Moncompte</div>
+    <Outlet />
   )
 }

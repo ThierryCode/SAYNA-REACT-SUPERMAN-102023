@@ -14,6 +14,7 @@ import { Connexion } from './pages/Moncompte/Connexion/Connexion';
 import { Inscription } from './pages/Moncompte/Connexion/Inscription';
 import { Deconnexion } from './pages/Moncompte/Connexion/Deconnexion';
 import { Confirmation } from './pages/Eshop/Validation/Confirmation';
+import { Useraccount } from './pages/Moncompte/Useraccount/Useraccount';
 import './App.css';
 
 function App() {
@@ -34,9 +35,10 @@ function App() {
             <Route path="confirmation" element={<Confirmation />}/>
           </Route>
           <Route path="/Moncompte" element={<Moncompte />}>
-          <Route path="connexion" element={<Connexion />}/>
-          <Route path="inscription" element={<Inscription />}/>
-          <Route path="deconnexion" element={<Deconnexion />}/>
+            <Route path="/Moncompte" index element={<Inscription />}/>
+            <Route path="connexion" element={<Connexion />}/>
+            <Route path="deconnexion" element={<Deconnexion />}/>
+            <Route path="useraccount" element={<Useraccount />}/>
           </Route>
           </Route>
         </Routes>
