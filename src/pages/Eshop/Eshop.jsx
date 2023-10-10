@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { Outlet } from 'react-router-dom';
 export const Eshop = () => {
   return (
-    <div>Eshop</div>
+    <Outlet/>
   )
 }
