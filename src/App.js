@@ -15,12 +15,17 @@ import { Inscription } from './pages/Moncompte/Connexion/Inscription';
 import { Deconnexion } from './pages/Moncompte/Connexion/Deconnexion';
 import { Confirmation } from './pages/Eshop/Validation/Confirmation';
 import { Useraccount } from './pages/Moncompte/Useraccount/Useraccount';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+import { AuthWrapper } from './components/Auth/AuthWrapper'
 import './App.css';
 
 function App() {
   return (
     <>
+    <Provider store={store}>
       <Router>
+        <AuthWrapper />
         <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
@@ -43,6 +48,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+    </Provider>
     </>
   );
 }
