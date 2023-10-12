@@ -2,7 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup'
-import * as yup from "yup"
+import * as yup from "yup";
+import { useState } from 'react';
+import {login, logout} from '../../../features/store/store';
+import {useDispatch, useSelector} from 'react-redux'
+
+export const userdata = JSON.parse(localStorage.getItem('userdata'));
+
 export const Inscription = () => {
 
   const schema = yup.object().shape({
@@ -23,7 +29,11 @@ export const Inscription = () => {
     console.log(userData);
     localStorage.setItem('userdata', JSON.stringify(userData));
     redirectToUseraccount();
+    dispatch(login({user:newUser}))
   }
+  const [newUser, setNewUser] = useState("")
+  const dispatch = useDispatch();
+  const user=useSelector((state)=>state.user.value.userdata)
   return (
     <>
       <h1>Inscription</h1>

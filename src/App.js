@@ -16,8 +16,8 @@ import { Deconnexion } from './pages/Moncompte/Connexion/Deconnexion';
 import { Confirmation } from './pages/Eshop/Validation/Confirmation';
 import { Useraccount } from './pages/Moncompte/Useraccount/Useraccount';
 import { Provider } from 'react-redux';
-import { store } from './store/store';
-import { AuthWrapper } from './components/Auth/AuthWrapper'
+import { store } from './features/store/store';
+
 import './App.css';
 
 function App() {
@@ -25,7 +25,6 @@ function App() {
     <>
     <Provider store={store}>
       <Router>
-        <AuthWrapper />
         <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
