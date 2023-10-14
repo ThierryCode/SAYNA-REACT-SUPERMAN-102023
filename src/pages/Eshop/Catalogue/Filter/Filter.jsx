@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Checkbox } from './Checkbox';
 
-export const Filter = () => {
-  return (
-    <div>Filter</div>
-  )
+export function Filter({ShowCateg, setShowCateg}) {
+
+ return (
+  <>
+  <h1>Filtre</h1>
+  <p>Categorie</p>
+  <Checkbox ShowCateg={ShowCateg} setShowCateg={setShowCateg}/>
+  </>
+ );
 }
