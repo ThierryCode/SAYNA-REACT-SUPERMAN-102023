@@ -6,7 +6,7 @@ export const Productlist = ({ proucts, ShowCateg }) => {
     <>
       <h1>Productlist</h1>
       <div>
-        <Link to="Panier">Panier</Link>
+        <Link to="cart">Panier</Link>
       </div>
       <div>
         {ShowCateg ? proucts.filter(product => ShowCateg[product.category]).map((product) => (
