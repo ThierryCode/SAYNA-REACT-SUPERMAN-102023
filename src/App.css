@@ -23,6 +23,6 @@
 }
 .header{
   width: 100%;
-  height: 50vh;
-  background-color: var(--color-07338C);
+  height: 100vh;
+  position: absolute;
 }
