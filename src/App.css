@@ -7,3 +7,17 @@
 .catalogue{
   display: flex;
 }
+:root{
+--color-000000:#000000;
+--color-FFFFFF:#FFFFFF;
+--color-7C7675:#7C7675;
+--color-B11313:#B11313;
+--color-F1C530:#F1C530;
+--color-07338C:#07338C;
+--linear-gradient-1: linear-gradient(180deg, #19587D 0%, #193C7D 100%);
+--linear-gradient-2: linear-gradient(180deg, #B11313 0%, #19587D 100%);
+--linear-gradient-3: linear-gradient(180deg, #021740 0%, #B11313 100%);
+--linear-gradient-4: linear-gradient(180deg, #19587D 0%, #B11313 100%);
+--linear-gradient-5: linear-gradient(180deg, #07338C 0%, #81264A 100%);
+--linear-gradient-6: linear-gradient(180deg, #000000 0%, #212E3E 100%);
+}
