@@ -21,3 +21,8 @@
 --linear-gradient-5: linear-gradient(180deg, #07338C 0%, #81264A 100%);
 --linear-gradient-6: linear-gradient(180deg, #000000 0%, #212E3E 100%);
 }
+.header{
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color-07338C);
+}
