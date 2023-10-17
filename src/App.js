@@ -4,7 +4,6 @@ import { Home } from './pages/Home';
 import { Game } from './pages/Game'
 import { Eshop } from './pages/Eshop/Eshop';
 import { Ficheproduit } from './pages/Eshop/Cart/Ficheproduit';
-
 import { Commandes } from './pages/Eshop/Cart/Commandes';
 import { Authentification } from './pages/Eshop/Achat/Authentification';
 import { Livraison } from './pages/Eshop/Achat/Livraison';
