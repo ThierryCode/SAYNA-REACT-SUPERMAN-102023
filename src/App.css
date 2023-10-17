@@ -218,13 +218,14 @@
   font-family: "cantarell";
   margin-bottom: 50px;
 }
-.carte {
-  width: 85%;
+.cart {
+  background-color: #000000;
+  width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
   justify-content: space-between;
   padding: 100px;
 }
@@ -696,12 +697,49 @@ input[type="checkbox"]:checked::before {
   align-items: center;
   justify-content: space-between;
 }
-.imageCarte{
-  width: 200px;
+/*carte Item*/
+.cartItems{
+  width: 60%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  background-color: #000;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
 }
-.inputCount,  .countArticle button{
+.imageCarte{
   width: 10%;
+}
+.inputCount{
+  width: 30px;
   font-size: 16px;
   border: none;
   color: #333; /* Couleur du texte */
+}
+.countArticle button{
+  width: 30px;
+  color: var(--color-7C7675);
+  border: none;
+}
+.OrderStory{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.delBtn{
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #fce8d8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  cursor: pointer;
 }

@@ -12,7 +12,7 @@ export const CartItem = (props) => {
       };
   return (
     <div className="cartItems">
-        <div className='cartItem'>
+        <div className='OrderStory'>
             <div className="ProductImage">
                 <img className= "imageCarte"src={imageProduct} alt="Produit" />
             </div>
