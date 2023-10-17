@@ -6,6 +6,9 @@
 }
 .catalogue{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 :root {
   --color-000000: #000000;
@@ -565,9 +568,33 @@ footer {
   background-color: #000000;
 }
 /*Carte Liste Produit*/
+.catalogue{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardList{
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .ProductListli{
-  width: 80%;
+  width: 200px;
+  height: 400px;
   list-style: none;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.ProductListli img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .infoProduct{
   display: flex;
@@ -581,6 +608,8 @@ footer {
 .productName, .productPrice{
   font-family: "Rajdhani";
   text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center;
 }
 .Button button {
   width: 100%;
@@ -594,11 +623,45 @@ footer {
   background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
 }
 .imageProduct{
-  width: 150px;
+  width: 100%;
   height: 205px;
   overflow: hidden;
 }
-.imageProduct img{
-  width: 150px;
+.ProductListli img{
+  width: 100%;
 }
 /*Filtre */
+.Filter{
+  width: 25%;
+  min-width: 300px;
+  padding-top: 100px ;
+  padding-left: 20px ;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #f1f1f1;  
+
+}
+.hrFilter{
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+.checkItems {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.checkItems input[type="checkbox"] {
+  margin-right: 10px;
+}
+.checkItems label{
+  font-family: "rajdhani", "sans-serif";
+  font-size: 16px;
+}
+.dropDownTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

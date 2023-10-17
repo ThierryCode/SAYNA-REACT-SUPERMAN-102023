@@ -8,9 +8,11 @@ export const Checkbox = ({ShowCateg, setShowCateg}) => {
   return (
     <>
       {categoriesArray.map((category) => (
-        <div key={category}>
-          <input type="checkbox" name="" id={category} checked={ShowCateg[category]} onChange={() => setShowCateg({...ShowCateg, [category]: !ShowCateg[category]})} />
-          <label>{category}</label>
+        <div className="CategCheck Menu">
+          <div className="checkItems" key={category}>
+            <input type="checkbox" name="" id={category} checked={ShowCateg[category]} onChange={() => setShowCateg({...ShowCateg, [category]: !ShowCateg[category]})}/>
+            <label htmlFor={category}>{category}</label>
+          </div>
         </div>
       ))}
     </>
