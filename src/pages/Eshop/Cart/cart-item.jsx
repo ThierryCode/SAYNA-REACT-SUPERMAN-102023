@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { shopContext } from '../../../context/shopContext';
 export const CartItem = (props) => {
-    const {id, name, price, productImage} = props.data;
+    const {id, name, price, imageProduct} = props.data;
     const {cartItems, addToCart, removeFromCart, updateCart} = useContext(shopContext);
     const deleteCartItem = (itemId) => {
         const item = this.cartItems.find((item) => item.id === itemId);
@@ -14,7 +14,7 @@ export const CartItem = (props) => {
     <div className="cartItems">
         <div className='cartItem'>
             <div className="ProductImage">
-                <img className= "imageCarte"src={productImage} alt="Produit" />
+                <img className= "imageCarte"src={imageProduct} alt="Produit" />
             </div>
             <div className="description">
                 <div className="productDescription">

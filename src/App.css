@@ -4,12 +4,13 @@
   box-sizing: border-box;
 
 }
-.catalogue{
+/* .catalogue{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+
+} */
 :root {
   --color-000000: #000000;
   --color-FFFFFF: #FFFFFF;
@@ -561,7 +562,7 @@ footer {
 .panier{
   position: absolute;
   margin-left: 80%;
-  margin-top: -50px;
+  margin-top: -20px;
 }
 .CatalFilter{
   padding-top: 50px;
@@ -574,6 +575,7 @@ footer {
 }
 /*Carte Liste Produit*/
 .catalogue{
+  margin-top: 100px;
   width: 100%;
   height: auto;
   display: flex;
@@ -693,4 +695,13 @@ input[type="checkbox"]:checked::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.imageCarte{
+  width: 200px;
+}
+.inputCount,  .countArticle button{
+  width: 10%;
+  font-size: 16px;
+  border: none;
+  color: #333; /* Couleur du texte */
 }
