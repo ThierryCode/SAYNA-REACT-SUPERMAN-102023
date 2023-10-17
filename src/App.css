@@ -7,36 +7,36 @@
 .catalogue{
   display: flex;
 }
-:root{
---color-000000:#000000;
---color-FFFFFF:#FFFFFF;
---color-7C7675:#7C7675;
---color-B11313:#B11313;
---color-F1C530:#F1C530;
---color-07338C:#07338C;
---linear-gradient-1: linear-gradient(180deg, #19587D 0%, #193C7D 100%);
---linear-gradient-2: linear-gradient(180deg, #B11313 0%, #19587D 100%);
---linear-gradient-3: linear-gradient(180deg, #021740 0%, #B11313 100%);
---linear-gradient-4: linear-gradient(180deg, #19587D 0%, #B11313 100%);
---linear-gradient-5: linear-gradient(180deg, #07338C 0%, #81264A 100%);
---linear-gradient-6: linear-gradient(180deg, #000000 0%, #212E3E 100%);
---flex-center-column: {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-};
---flex-center-row: {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-};
---flex-center:{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+:root {
+  --color-000000: #000000;
+  --color-FFFFFF: #FFFFFF;
+  --color-7C7675: #7C7675;
+  --color-B11313: #B11313;
+  --color-F1C530: #F1C530;
+  --color-07338C: #07338C;
+  --linear-gradient-1: linear-gradient(180deg, #19587D 0%, #193C7D 100%);
+  --linear-gradient-2: linear-gradient(180deg, #B11313 0%, #19587D 100%);
+  --linear-gradient-3: linear-gradient(180deg, #021740 0%, #B11313 100%);
+  --linear-gradient-4: linear-gradient(180deg, #19587D 0%, #B11313 100%);
+  --linear-gradient-5: linear-gradient(180deg, #07338C 0%, #81264A 100%);
+  --linear-gradient-6: linear-gradient(180deg, #000000 0%, #212E3E 100%);
+  --flex-center-column: {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
+  --flex-center-row: {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  };
+  --flex-center: {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  };
 }
 .header{
   width: 100%;
@@ -103,7 +103,6 @@
   background-color: white;
 }
 .HeaderHome{
-  padding: 100px 100px;
   width: 100%;
   height: 100vh;
   letter-spacing: 3px;
@@ -112,32 +111,56 @@
   background-position: center;
   background-image: url("assets/image/img1.png");
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .IntroHome{
-  position: absolute;
-  width: 85%;
+  width: 80%;
   height: 80vh;
   color: #ffffff;
-  /* background-color: #B11313; */
   font-size: 1.5em;
-  font-weight: 100;
-  padding: 350px 150px 20px 7%;
   text-align: center;
   border-top: none;
   border-bottom: none;
-  font-family: 'Advent Pro', sans-serif;
-  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .Dclogo{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-image: url('assets/logos/logoDC.png');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
-.Dclogo img{
-  width: 100%;
+.Textintro {
+  width: 50%;
+  height: 260px;
+  padding: 5%;
+
+}
+.Textintro p{
+  padding-top: 20px;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 28px;
+  font-style: italic;
+}
+.introTextHome span{
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 28px;
+  font-style: italic;
 }
 /* Section cinéma */
 .contenu {

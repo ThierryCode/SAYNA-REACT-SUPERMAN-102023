@@ -5,13 +5,16 @@ export const Home = () => {
     <>
         <div className="HeaderHome">
           <div className="IntroHome">
+            <div className="ResSocIcone">
+                <img src="" alt="" />
+            </div>
               <div className="Dclogo">
-                  <img src="assets/logos/logoDC.png" alt="" />
               </div>
             <div className="Textintro">
               <h1 className='introTextHome'>
-                SUPERMAN <br />
-                L’HOMME D’ACIER
+                <span>SUPERMAN</span>
+                 <br />
+                <p>L’HOMME D’ACIER</p>
               </h1>
             </div>
           </div>
