@@ -11,10 +11,11 @@ export const Catalogue = () => {
 
  return (
   <div className='CatalFilter container-fluid'>   
-   <Filter ShowCateg={ShowCateg} setShowCateg={setShowCateg}/>
-   <div>
+      <div className='panier'>
         <Link to="cart">Panier</Link>
     </div>
+   <Filter ShowCateg={ShowCateg} setShowCateg={setShowCateg}/>
+
    <div className="catalogue">
     <ul className='cardList container-fluid'>
         <Productlist proucts={visibleProducts} ShowCateg={ShowCateg}/>

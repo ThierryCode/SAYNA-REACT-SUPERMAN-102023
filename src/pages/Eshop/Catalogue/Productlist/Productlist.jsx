@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { PRODUCTS } from '../../../../products';
 import { shopContext } from '../../../../context/shopContext';
-// import '../../../../App.css';
 export const Productlist = ({ShowCateg }) => {
 
   const {addToCart, cartItems} = useContext(shopContext);
