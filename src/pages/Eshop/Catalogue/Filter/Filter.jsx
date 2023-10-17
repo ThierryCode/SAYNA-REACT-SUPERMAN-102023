@@ -5,8 +5,8 @@ export function Filter({ShowCateg, setShowCateg}) {
 
  return (
   <>
-  <h1>Filtre</h1>
-  <p>Categorie</p>
+  <h2>Filtres</h2>
+  <p>Categories</p>
   <Checkbox ShowCateg={ShowCateg} setShowCateg={setShowCateg}/>
   </>
  );

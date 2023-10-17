@@ -27,7 +27,7 @@ export const Home = () => {
               <div className="Dclogo">
               </div>
             <div className="Textintro">
-              <h1 className='introTextHome'>
+              <h1 className='introText'>
                 <span>SUPERMAN</span>
                  <br />
                 <p>L’HOMME D’ACIER</p>

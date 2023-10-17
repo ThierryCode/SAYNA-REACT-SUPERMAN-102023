@@ -9,9 +9,11 @@ export const Catalogue = () => {
  const visibleProducts = PRODUCTS;
 
  return (
-  <div className='catalogue'>   
+  <div className='CatalFilter container-fluid'>   
    <Filter ShowCateg={ShowCateg} setShowCateg={setShowCateg}/>
-   <Productlist proucts={visibleProducts} ShowCateg={ShowCateg}/>
+   <ul>
+    <Productlist proucts={visibleProducts} ShowCateg={ShowCateg}/>
+   </ul>
   </div>
  )
 }

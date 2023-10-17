@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { PRODUCTS } from '../../../../products';
 import { shopContext } from '../../../../context/shopContext';
+// import '../../../../App.css';
 export const Productlist = ({ShowCateg }) => {
 
   const {addToCart, cartItems} = useContext(shopContext);
@@ -15,25 +16,27 @@ export const Productlist = ({ShowCateg }) => {
       </div>
       <div>
         {ShowCateg ? PRODUCTS.filter(PRODUCTS => ShowCateg[PRODUCTS.category]).map((PRODUCTS) => (
-          <div key={PRODUCTS.id}>
-            <h2>{PRODUCTS.name}</h2>
-            <p>{PRODUCTS.price}</p>
-            {/* <p>{stocked ? 'En stock' : 'En rupture de stock'}</p> */}
-            <div className="Button">
-          <button onClick = {() => addToCart(PRODUCTS.id)}>
-          Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}</button>
-        </div>
-          </div>
+          <li className="Card col-3 ProductListli" key={PRODUCTS.id}>
+            <div className="infoProduct">              
+              <p className='productName text-center my-3'>{PRODUCTS.name}</p>
+              <p className='productPrice'>{PRODUCTS.price}</p>
+              <div className="Button">
+                <button onClick = {() => addToCart(PRODUCTS.id)}>
+                Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}
+                </button>
+              </div>
+            </div>
+          </li>
         )) : PRODUCTS.map((PRODUCTS) => (
-          <div key={PRODUCTS.id}>
+          <li className="Card col-3 ProductListli" key={PRODUCTS.id}>
             <h2>{PRODUCTS.name}</h2>
             <p>{PRODUCTS.price}</p>
-            {/* <p>{stocked ? 'En stock' : 'En rupture de stock'}</p> */}
             <div className="Button">
-          <button onClick = {() => addToCart(PRODUCTS.id)}>
-          Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}</button>
-        </div>
-          </div>
+              <button onClick = {() => addToCart(PRODUCTS.id)}>
+                Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}
+              </button>
+            </div>
+          </li>
         ))}
       </div>
     </>
