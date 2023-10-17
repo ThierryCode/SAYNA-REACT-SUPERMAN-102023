@@ -3,9 +3,19 @@ import React from 'react'
 export const Home = () => {
   return (
     <>
-      <div classNameName="headerBg">
-
-      </div>
+        <div className="HeaderHome">
+          <div className="IntroHome">
+              <div className="Dclogo">
+                  <img src="assets/logos/logoDC.png" alt="" />
+              </div>
+            <div className="Textintro">
+              <h1 className='introTextHome'>
+                SUPERMAN <br />
+                L’HOMME D’ACIER
+              </h1>
+            </div>
+          </div>
+        </div>
        {/* Section Cinema  */}
     <section className="contenu">
         <div className="down">
