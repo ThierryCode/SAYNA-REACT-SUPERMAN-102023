@@ -593,4 +593,12 @@ footer {
   text-transform: uppercase;
   background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
 }
+.imageProduct{
+  width: 150px;
+  height: 205px;
+  overflow: hidden;
+}
+.imageProduct img{
+  width: 150px;
+}
 /*Filtre */
