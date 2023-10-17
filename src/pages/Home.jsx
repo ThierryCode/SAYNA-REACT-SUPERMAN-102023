@@ -1,12 +1,28 @@
 import React from 'react'
-
+import facebook from '../assets/icones/facebook.png'
+import instagram from '../assets/icones/instagram.png'
+import twitter from '../assets/icones/twitter.png'
+import SupermanImg2 from "../assets/image/img2.png"
+import SupermanImg41 from "../assets/image/img41.png"
+import SupermanImg4 from '../assets/image/img4.png'
+import img5 from '../assets/image/img5.png'
+import img6 from '../assets/image/img6.png'
+import img7 from '../assets/image/img7.png'
+import img8 from '../assets/image/img8.png'
+import img9 from '../assets/image/img9.png'
+import img10 from '../assets/image/img10.png'
+import img12 from '../assets/image/img12.png'
+import flechGauche from '../assets/icones/Polygon-1.png'
+import flechDroite from '../assets/icones/Polygon.png'
 export const Home = () => {
   return (
     <>
         <div className="HeaderHome">
           <div className="IntroHome">
             <div className="ResSocIcone">
-                <img src="" alt="" />
+                <img src={facebook} alt="iconefacebook" display="block"/>
+                <img src={instagram} alt="iconeinstagram" display="block"/>
+                <img src={twitter} alt="iconetwitter" display="block"/>
             </div>
               <div className="Dclogo">
               </div>
@@ -21,28 +37,22 @@ export const Home = () => {
         </div>
        {/* Section Cinema  */}
     <section className="contenu">
-        <div className="down">
-            <img src="assets/Logos/flèche_down_header.png" alt=""/>
-        </div>
         <h2>SUPERMAN AU CINÉMA</h2>
         <p className="presentation">Dans la version actuelle de son histoire, Superman est né sur la planète Krypton sous le nom de « Kal-El ». Encore bébé, il fut placé dans un vaisseau spatial par son père, le scientifique Jor-El, et sa mère, Lara, car la planète était sous la menace d'une destruction totale.Le vaisseau quitta Krypton juste avant l'explosion fatidique... Au terme d'un très long voyage, il atterrit sur la planète Terre. Kal-El est trouvé par un couple de fermiers de Smallville, (Kansas). Jonathan et Martha Kent, qui n'ont pas d'enfant, décident alors de l'adopter et de garder le secret sur son origine.
 Kal-El est rebaptisé « Clark Joseph Kent » et grandit entouré de ses amis Lana Lang (son premier amour) et Pete Ross jusqu'à ce que ses pouvoirs se révèlent à lui au moment de son adolescence.Jeune adulte, Clark décide de s'installer à Metropolis pour devenir journaliste. Il y est engagé par Perry White, le rédacteur en chef du Daily Planet. Pour sauver les personnes qui lui sont chers ainsi que les habitants de la Terre, Clark revêt son costume et devient Superman, l’homme d’acier aux yeux du monde.
 </p>
         <div className="carte">
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome2.png" alt="Robert Pattinson"/>
-                <p className="nom">Robert Pattinson</p>
-                <p className="date">(2022)</p>
+                <img src={SupermanImg2} alt="Superman"/>
+
             </div>
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome3.png" alt="Christian Bale "/>
-                <p className="nom">Robert Pattinson</p>
-                <p className="date">(2006-2008-2012)</p>
+                <img src={SupermanImg41} alt="Superman"/>
+
             </div>
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome4.png" alt="Ben Affleck"/>
-                <p className="nom">Robert Pattinson</p>
-                <p className="date">(2016-2017/2020-2023)</p>
+                <img src={SupermanImg4} alt="Superman"/>
+
             </div>
         </div>
         <div className="imageBatarang">
@@ -60,19 +70,13 @@ Kal-El est rebaptisé « Clark Joseph Kent » et grandit entouré de ses amis La
         dangereux adversaires.</p>
         <div className="carte">
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome5.png" alt="The Riddler Paul Dano"/>
-                <p className="nom">The Riddler Paul Dano</p>
-                <p className="date">(2022)</p>
+                <img src={img5} alt=""/>
             </div>
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome6.png" alt="Le Joker Heath Ledger"/>
-                <p className="nom">Le Joker Heath Ledger</p>
-                <p className="date">(2008)</p>
+                <img src={img6} alt=""/>
             </div>
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome7.png" alt="Darkseid Ray Porter"/>
-                <p className="nom">Darkseid Ray Porter</p>
-                <p className="date">(2022)</p>
+                <img src={img7} alt=""/>
             </div>
         </div>
         <div className="imageBatman">
@@ -89,37 +93,33 @@ Kal-El est rebaptisé « Clark Joseph Kent » et grandit entouré de ses amis La
         Lane qui deviendra sa partenaire et son seul “véritable amour”</p>
         <div className="carte">
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome9.png" alt="Alfred Pennyworth Michael Cain"/>
-                <p className="nom">Alfred Pennyworth Michael Cain</p>
-                <p className="date">(2006-2008-2012)</p>
+                <img src={img8} alt=""/>
             </div>
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome8.png" alt="Catwoman Zoé Kravitz "/>
-                <p className="nom">Catwoman Zoé Kravitz</p>
-                <p className="date">(2008)</p>
+                <img src={img9} alt=""/>
             </div>
             <div className="infoCard">
-                <img src="assets/Illustrations/Bathome10.png" alt="James Gordon"/>
-                <p className="nom">James Gordon</p>
-                <p className="date">(2014-2019)</p>
+                <img src={img10} alt=""/>
             </div>
         </div>
-        <h2>BATMAN V SUPERMAN</h2>
-        <p className="presentation">Le monde n’est pas assez grand pour deux super héros. 
-        Alors que Superman se battait contre Zod, l’affrontement fait des dégats et détruit 
-        partiellement la ville de Métropolis. Bruce Wayne alors présent dans la ville assiste, 
-        impuissant, à l’effondrement de la ville qui fait beaucoup de victimes. Wayne est 
-        alors persuadé que Superman causera un jour la perte de l'Humanité et qu'il est 
-        inévitable de se préparer à l'éliminer. Devenu méfiant il se demande si l'homme de fer, 
-        cet extraterrestre de Krypton, qui peut à lui seul détruire le monde d'une simple pichenette, 
-        décidera un jour de ne plus défendre la Terre, voire même de causer sa perte. 
+        <div className="BatVsup">
+            <h2>BATMAN V SUPERMAN</h2>
+            <p className="presentation">Le monde n’est pas assez grand pour deux super héros. 
+            Alors que Superman se battait contre Zod, l’affrontement fait des dégats et détruit 
+            partiellement la ville de Métropolis. Bruce Wayne alors présent dans la ville assiste, 
+            impuissant, à l’effondrement de la ville qui fait beaucoup de victimes. Wayne est 
+            alors persuadé que Superman causera un jour la perte de l'Humanité et qu'il est 
+            inévitable de se préparer à l'éliminer. Devenu méfiant il se demande si l'homme de fer, 
+            cet extraterrestre de Krypton, qui peut à lui seul détruire le monde d'une simple pichenette, 
+            décidera un jour de ne plus défendre la Terre, voire même de causer sa perte. 
 
-        De son côté Superman d’une part cherche à se défendre mais retourne l’offensive contre Batman. 
-        Ce dernier n'est plus que l'ombre de lui-même. Devenu un justicier impitoyable, mégalomane et cruel 
-        à la suite du meurtre de son ancien partenaire Robin par le Joker, il n'hésite plus à violer son code
-        moral en éliminant et marquant au fer les criminels. Superman souhaite simplement lui rappeler 
-        le code moral des “justicier” en usant de la force s’il le faut pour que Batman cesse son comportement abusif.
-        </p>
+            De son côté Superman d’une part cherche à se défendre mais retourne l’offensive contre Batman. 
+            Ce dernier n'est plus que l'ombre de lui-même. Devenu un justicier impitoyable, mégalomane et cruel 
+            à la suite du meurtre de son ancien partenaire Robin par le Joker, il n'hésite plus à violer son code
+            moral en éliminant et marquant au fer les criminels. Superman souhaite simplement lui rappeler 
+            le code moral des “justicier” en usant de la force s’il le faut pour que Batman cesse son comportement abusif.
+            </p>
+        </div>
         <div className="imgJusticeLeag">
             <img src="assets/Illustrations/Bathome11.png" alt="La league des justiciés"/>
         </div>
@@ -130,11 +130,11 @@ Kal-El est rebaptisé « Clark Joseph Kent » et grandit entouré de ses amis La
         <h2>Multimédia</h2>
         <div className="content">
             <div className="flecheGauche">
-                <img src="assets/Logos/icon_flèche_1.png" alt=""/>
+                <img src={flechGauche} alt=""/>
             </div>
             <div className="card">
                 <div className="imagecard">
-                    <img src="assets/Illustrations/Bathome_ba1.png" alt=""/>
+                    <img src={img12} alt=""/>
                 </div>
                 <div className="contentCard">
                     <h3>Action, Adventure</h3>
@@ -147,7 +147,7 @@ Kal-El est rebaptisé « Clark Joseph Kent » et grandit entouré de ses amis La
                 </div>
             </div>
             <div className="flecheDroite">
-                <img src="assets/Logos/icon_flèche_2.png" alt=""/>
+                <img src={flechDroite} alt=""/>
             </div>
         </div>
         <div className="bandeAnnonce">
