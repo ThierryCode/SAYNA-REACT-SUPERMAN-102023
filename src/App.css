@@ -581,7 +581,6 @@ footer {
 .productName, .productPrice{
   font-family: "Rajdhani";
   text-transform: uppercase;
-  color: #B11313;
 }
 .Button button {
   width: 100%;
