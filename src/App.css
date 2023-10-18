@@ -572,7 +572,8 @@ footer {
   display: flex;
   align-items: start;
   justify-content: center;
-  background-color: #000000;
+  background-image: var(--linear-gradient-6);
+  padding-bottom: 100px;
 }
 /*Carte Liste Produit*/
 .catalogue{
@@ -614,10 +615,17 @@ footer {
   margin-bottom: 20px;
 }
 .productName, .productPrice{
-  font-family: "Rajdhani";
+  font-family: "cantarell";
   text-transform: uppercase;
   margin-top: 10px;
   text-align: center;
+  color: var(--color-FFFFFF);
+}
+.productPrice{
+  font-weight: bold;
+}
+.border{
+  margin-bottom: 20px;
 }
 .Button button {
   width: 100%;
@@ -627,8 +635,10 @@ footer {
   border: none;
   font-family: "rajdhani", "sans-serif";
   font-size: 1em;
+  font-style: italic;
   text-transform: uppercase;
-  background: linear-gradient(273.81deg, rgba(137, 0, 8, 0.6) 0%, rgba(252, 232, 216, 0.4) 100%);
+  background: var(--color-07338C);
+  border-radius: 10px;
 }
 .imageProduct{
   width: 100%;
@@ -700,14 +710,16 @@ input[type="checkbox"]:checked::before {
 /*carte Item*/
 .cartItems{
   width: 60%;
-  height: 100px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: row;
-  background-color: #000;
+  justify-content: space-around;
+  background-color: var(--color-000000);
   border: 1px solid #f1f1f1;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .imageCarte{
   width: 10%;
@@ -716,7 +728,7 @@ input[type="checkbox"]:checked::before {
   width: 30px;
   font-size: 16px;
   border: none;
-  color: #333; /* Couleur du texte */
+  color: #333;
 }
 .countArticle button{
   width: 30px;
@@ -724,12 +736,26 @@ input[type="checkbox"]:checked::before {
   border: none;
 }
 .OrderStory{
-  width: 70%;
+  width: 95%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.OrderStory .ProductImage{
+  width: 350px%;
+}
+.imageCarte{
+  width: 100px;
+}
+.OrderStory .description, .OrderStory .countArticle, .delete{
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  justify-content: space-between;
+  min-width: none;
 }
 .delBtn{
   width: 50px;
@@ -742,4 +768,14 @@ input[type="checkbox"]:checked::before {
   justify-content: center;
   font-size: 36px;
   cursor: pointer;
+}
+/*Panier*/
+.cart {
+  background-color: var(--color-000000);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 100px;
 }

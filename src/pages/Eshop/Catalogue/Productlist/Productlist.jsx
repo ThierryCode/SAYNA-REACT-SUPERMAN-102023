@@ -10,10 +10,12 @@ export const Productlist = ({ShowCateg }) => {
     <>
         {ShowCateg ? PRODUCTS.filter(PRODUCTS => ShowCateg[PRODUCTS.category]).map((PRODUCTS) => (
           <li className="Card ProductListli" key={PRODUCTS.id}>
-            <img src={PRODUCTS.imageProduct} alt="article" />
-            <p className='productName '>{PRODUCTS.name}</p>
-            <p className='productPrice'>{PRODUCTS.price} $</p>
-            <div className="Button">
+            <div className="border">
+              <img src={PRODUCTS.imageProduct} alt="article" />
+              <p className='productName '>{PRODUCTS.name}</p>
+              <p className='productPrice'>{PRODUCTS.price} $</p>
+            </div>
+            <div className="ButtonAddToCart">
               <button onClick = {() => addToCart(PRODUCTS.id)}>
               Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}
               </button>
@@ -21,9 +23,11 @@ export const Productlist = ({ShowCateg }) => {
           </li>
         )) : PRODUCTS.map((PRODUCTS) => (
           <li className="Card ProductListli" key={PRODUCTS.id}>
-            <img src={PRODUCTS.imageProduct} alt="" />
-            <p className='productName'>{PRODUCTS.name}</p >
-            <p className='productPrice'>{PRODUCTS.price} $</p>
+            <div className="border">
+              <img src={PRODUCTS.imageProduct} alt="" />
+              <p className='productName'>{PRODUCTS.name}</p >
+              <p className='productPrice'>{PRODUCTS.price} $</p>
+            </div>
             <div className="Button">
             <button onClick = {() => addToCart(PRODUCTS.id)}>
               Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}

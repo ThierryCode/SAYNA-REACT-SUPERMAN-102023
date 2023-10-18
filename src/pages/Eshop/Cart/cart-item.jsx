@@ -31,9 +31,12 @@ export const CartItem = (props) => {
                 <input className="inputCount" value={cartItems[id]} onChange={(e)=>updateCart(Number(e.target.value), id)}/>
                 <button onClick={() => addToCart(id)}> + </button>
             </div>
-            <div className="delBtn" onClick={() => deleteCartItem(id)}>
-                <p> x </p>
+            <div className="delete">
+                <div className="delBtn" onClick={() => deleteCartItem(id)}>
+                    <p> x </p>
+                </div>
             </div>
+
         </div>
 
     </div>
