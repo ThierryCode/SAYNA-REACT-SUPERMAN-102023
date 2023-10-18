@@ -218,15 +218,15 @@
   font-family: "cantarell";
   margin-bottom: 50px;
 }
-.cart {
+.carte {
   background-color: #000000;
   width: 100%;
   height: auto;
   display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 100px;
 }
 .infoCard {
