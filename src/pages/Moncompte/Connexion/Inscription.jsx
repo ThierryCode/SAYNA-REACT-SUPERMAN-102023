@@ -27,9 +27,10 @@ export const Inscription = () => {
 
   return (
     <>
+    <div className="Register">
       <h1>Inscription</h1>
       <span>Vous avez déjà un compte ?</span><Link to="/Moncompte/connexion">Connectez-vous ici</Link>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className='RegisterForm' onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="">Nom</label><br/>
         <input type="text" placeholder='Nom'  {...register("nom")}/><br/>
         <p>{errors.name?.message}</p>
@@ -47,7 +48,9 @@ export const Inscription = () => {
         <p>{errors.confirmpassword?.message}</p>
         <p>Politique de confidentialité</p>
         <input type='submit' value="S'inscrire"/>
+        <p>Connectez vous avec </p>
       </form>
+    </div>
     </>
   )
 }

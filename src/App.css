@@ -18,12 +18,16 @@
   --color-B11313: #B11313;
   --color-F1C530: #F1C530;
   --color-07338C: #07338C;
+
+  --linear-gradient-0: linear-gradient(180deg, #19587D 0%, #193C7D 100%);
   --linear-gradient-1: linear-gradient(180deg, #19587D 0%, #193C7D 100%);
   --linear-gradient-2: linear-gradient(180deg, #B11313 0%, #19587D 100%);
   --linear-gradient-3: linear-gradient(180deg, #021740 0%, #B11313 100%);
   --linear-gradient-4: linear-gradient(180deg, #19587D 0%, #B11313 100%);
   --linear-gradient-5: linear-gradient(180deg, #07338C 0%, #81264A 100%);
-  --linear-gradient-6: linear-gradient(180deg, #000000 0%, #212E3E 100%);
+  --linear-gradient-6: linear-gradient(50deg, #021740 0%, #81264A 100%);
+  --linear-gradient-7: linear-gradient(180deg, #000000 0%, #212E3E 100%);
+  --linear-gradient-8: radial-gradient(at right center,#81264A 0%, #021740 100%);
   --flex-center-column: {
     display: flex;
     align-items: center;
@@ -178,7 +182,7 @@
 .contenu {
   width: 100%;
   height: auto;
-  background: var(--linear-gradient-6);
+  background: var(--linear-gradient-7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -572,7 +576,7 @@ footer {
   display: flex;
   align-items: start;
   justify-content: center;
-  background-image: var(--linear-gradient-6);
+  background-image: var(--linear-gradient-7);
   padding-bottom: 100px;
 }
 /*Carte Liste Produit*/
@@ -778,4 +782,63 @@ input[type="checkbox"]:checked::before {
   justify-content: start;
   flex-direction: column;
   padding: 100px;
+  color: var(--color-FFFFFF);
+}
+.cartButton{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.cartButton button{
+  width: 200px;
+  height: 50px;
+  color: #f1f1f1;
+  line-height: 100%;
+  margin-right: 20px;
+  border: none;
+  font-family: "rajdhani", "sans-serif";
+  font-size: 1em;
+  font-style: italic;
+  text-transform: uppercase;
+  background-image: var(--linear-gradient-6);
+  border-radius: 10px;
+}
+.cartButton button a{
+  text-decoration: none;
+  color: #f1f1f1;
+}
+/*Mon compte */
+/*Register ou Inscription*/
+.Register {
+  background-image: var(--linear-gradient-8);
+  width: 70%;
+  padding: 100px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.RegisterForm{
+  padding: 50px;
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50px;
+  background-color: #021740;
+}
+.MonComte{
+  background-color: #000000;
 }
