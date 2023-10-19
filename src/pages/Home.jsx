@@ -120,9 +120,6 @@ Kal-El est rebaptisé « Clark Joseph Kent » et grandit entouré de ses amis La
             le code moral des “justicier” en usant de la force s’il le faut pour que Batman cesse son comportement abusif.
             </p>
         </div>
-        <div className="imgJusticeLeag">
-            <img src="assets/Illustrations/Bathome11.png" alt="La league des justiciés"/>
-        </div>
     </section>
      {/* Section Cinema 
      Section multimédia  */}

@@ -246,9 +246,7 @@
   color: #ffffff;
   font-size: 30px;
 }
-.BatVsup{
 
-}
 .imgJusticeLeag {
   width: 100%;
   height: auto;
@@ -726,7 +724,7 @@ input[type="checkbox"]:checked::before {
   flex-wrap: wrap;
 }
 .imageCarte{
-  width: 10%;
+  width: 100px;
 }
 .inputCount{
   width: 30px;
@@ -749,7 +747,7 @@ input[type="checkbox"]:checked::before {
   flex-wrap: wrap;
 }
 .OrderStory .ProductImage{
-  width: 350px%;
+  width: 100px;
 }
 .imageCarte{
   width: 100px;
@@ -791,7 +789,20 @@ input[type="checkbox"]:checked::before {
   display: flex;
   align-items: center;
   justify-content: center;
-
+}
+.ButtonAddToCart button{
+  width: 200px;
+  height: 50px;
+  color: #f1f1f1;
+  line-height: 100%;
+  margin-right: 20px;
+  border: none;
+  font-family: "rajdhani", "sans-serif";
+  font-size: 1em;
+  font-style: italic;
+  text-transform: uppercase;
+  background-color: #07338C;
+  border-radius: 10px;
 }
 .cartButton button{
   width: 200px;

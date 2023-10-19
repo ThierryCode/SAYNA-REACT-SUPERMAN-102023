@@ -1,5 +1,5 @@
 import React from 'react';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { PRODUCTS } from '../../../../products';
 import { shopContext } from '../../../../context/shopContext';
 export const Productlist = ({ShowCateg }) => {
@@ -28,7 +28,7 @@ export const Productlist = ({ShowCateg }) => {
               <p className='productName'>{PRODUCTS.name}</p >
               <p className='productPrice'>{PRODUCTS.price} $</p>
             </div>
-            <div className="Button">
+            <div className="ButtonAddToCart">
             <button onClick = {() => addToCart(PRODUCTS.id)}>
               Ajouter au panier {cartItemAmount > 0 && <>({cartItemAmount})</>}
             </button>
