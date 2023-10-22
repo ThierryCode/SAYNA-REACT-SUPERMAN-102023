@@ -15,6 +15,7 @@
   --color-000000: #000000;
   --color-FFFFFF: #FFFFFF;
   --color-7C7675: #7C7675;
+  --color-7c767575: #7c767575;
   --color-B11313: #B11313;
   --color-F1C530: #F1C530;
   --color-07338C: #07338C;
@@ -25,7 +26,7 @@
   --linear-gradient-3: linear-gradient(180deg, #021740 0%, #B11313 100%);
   --linear-gradient-4: linear-gradient(180deg, #19587D 0%, #B11313 100%);
   --linear-gradient-5: linear-gradient(180deg, #07338C 0%, #81264A 100%);
-  --linear-gradient-6: linear-gradient(50deg, #021740 0%, #81264A 100%);
+  --linear-gradient-6: linear-gradient(50deg, #19587D 0%, #81264A 50%);
   --linear-gradient-7: linear-gradient(180deg, #000000 0%, #212E3E 100%);
   --linear-gradient-8: radial-gradient(at right center,#81264A 0%, #021740 100%);
   --flex-center-column: {
@@ -825,7 +826,7 @@ input[type="checkbox"]:checked::before {
 /*Mon compte */
 /*Register ou Inscription*/
 .Register {
-  background-image: var(--linear-gradient-8);
+  background-image: var(--linear-gradient-2);
   width: 70%;
   padding: 100px;
   height: auto;
@@ -844,11 +845,42 @@ input[type="checkbox"]:checked::before {
   width: 70%;
   height: auto;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: column;
-  border-radius: 50px;
-  background-color: #021740;
+  border-radius: 10px;
+  background-color: var(--linear-gradient-8);
+}
+.RegisterForm label{
+  font-family: "Advent Pro";
+  font-style: italic;
+  font-size: 2em;
+  width: 100%;
+}
+.RegisterInput{
+  width: 100%;
+  align-self: center;
+  height: 50px;
+  padding-left: 20px;
+  background-color: transparent;
+  border: 1px solid var(--color-FFFFFF);
+  border-radius: 5px;
+  font-family: "cantarell";
+  font-size: 16px;
+  color: var(--color-7C7675);
+}
+.RegisterInputSubmit{
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  align-self: center;
+  background-image: var(--linear-gradient-6);
+  border: none;
+  font-family: "Advent Pro";
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--color-FFFFFF);
+  font-style: italic;
 }
 .MonComte{
   background-color: #000000;

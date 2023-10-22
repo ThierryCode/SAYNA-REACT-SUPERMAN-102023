@@ -31,23 +31,23 @@ export const Inscription = () => {
       <h1>Inscription</h1>
       <span>Vous avez déjà un compte ?</span><Link to="/Moncompte/connexion">Connectez-vous ici</Link>
       <form className='RegisterForm' onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="">Nom</label><br/>
-        <input type="text" placeholder='Nom'  {...register("nom")}/><br/>
+        <label htmlFor="nom">Nom</label><br/>
+        <input className="RegisterInput" id="nom" type="text" placeholder='Nom' {...register("nom")}/><br/>
         <p>{errors.name?.message}</p>
         <label htmlFor="">Prénom</label><br/>
-        <input type="text" placeholder='Prénom' {...register("prenom")}/><br/>
+        <input className="RegisterInput"type="text" placeholder='Prénom' {...register("prenom")}/><br/>
         <p>{errors.prenom?.message}</p>
         <label htmlFor="">E-mail</label><br/>
-        <input type="email" placeholder='E-mail'{...register("email")}/><br/>
+        <input className="RegisterInput" type="email" placeholder='E-mail'{...register("email")}/><br/>
         <p>{errors.email?.message}</p>
         <label htmlFor="">Mot de passe</label><br/>
-        <input type="password" placeholder='Mot de passe' {...register("password")}/><br/>
+        <input className="RegisterInput" type="password" placeholder='Mot de passe' {...register("password")}/><br/>
         <p>{errors.password?.message}</p>
         <label htmlFor="">Confirmer votre mot de passe</label><br/>
-        <input type="password" placeholder='Confirmation du mot de passe' {...register("confirmpassword")}/><br/>
+        <input className="RegisterInput"type="password" placeholder='Confirmation du mot de passe' {...register("confirmpassword")}/><br/>
         <p>{errors.confirmpassword?.message}</p>
         <p>Politique de confidentialité</p>
-        <input type='submit' value="S'inscrire"/>
+        <input className="RegisterInputSubmit" type='submit' value="Valider"/>
         <p>Connectez vous avec </p>
       </form>
     </div>
